@@ -6,8 +6,6 @@ interface IMathRationalOperations {
 }
 
 public class MathRationalOperations implements IMathRationalOperations {
-    int a, b;
-
     @Override
     public void registerRationalNumbers(int a, int b) {
         this.a = a;
@@ -29,5 +27,8 @@ public class MathRationalOperations implements IMathRationalOperations {
         return a == b;
     }
 
-    public static void main(String[] args) {}
+    
+    public static void main(String[] args) {
+        int a, b;
+    }
 }
