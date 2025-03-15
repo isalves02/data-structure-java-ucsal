@@ -8,10 +8,6 @@ interface IBooks {
 }
 
 public class Books implements IBooks {
-    String title;
-    String publisher;
-    int publishYear;
-
     @Override
     public String publisher() {
         return publisher;
@@ -42,5 +38,9 @@ public class Books implements IBooks {
         this.publishYear = publishYear;
     }
 
-    public static void main(String[] args) { }
+    public static void main(String[] args) {
+        String title;
+        String publisher;
+        int publishYear; 
+    }
 }
