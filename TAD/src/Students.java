@@ -5,9 +5,6 @@ interface IStudents {
 }
 
 public class Students implements IStudents {
-    String studentName;
-    int studentSemester;
-
     @Override
     public void addStudentInfo(String name, int semester) {
         studentName = name;
@@ -24,5 +21,8 @@ public class Students implements IStudents {
         return studentName;
     }
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        String studentName;
+        int studentSemester;
+    }
 }
