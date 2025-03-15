@@ -6,9 +6,6 @@ interface ITeacher {
 }
 
 public class Teacher implements ITeacher {
-    String name;
-    int subjectCode;
-
     @Override
     public String teacherName() {
         return this.name;
@@ -29,5 +26,8 @@ public class Teacher implements ITeacher {
         this.name = name;
     }
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        String name;
+        int subjectCode;
+    }
 }
