@@ -6,8 +6,6 @@ interface IBankAccount {
 }
 
 public class BankAccount implements IBankAccount {
-    double saldo;
-
     @Override
     public double verSaldo() {
         return this.saldo;
@@ -32,5 +30,7 @@ public class BankAccount implements IBankAccount {
         return "Seu saldo atualizado é: R$" + this.saldo;
     }
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        double saldo;
+    }
 }
