@@ -1,8 +1,3 @@
-/*
-* 12 – Crie um TAD para representar um histórico de compras de um cliente.
-* Cada compra deve conter a data, a lista de itens comprados e o valor total.
-* */
-
 interface IRegistroCompra {
     void registrarCompra(int idRegistro, String data, String[] itensComprados, double valorTotal);
     void deletarRegistro(int idRegistro);
