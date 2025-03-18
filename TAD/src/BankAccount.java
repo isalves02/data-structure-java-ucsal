@@ -1,12 +1,12 @@
-interface IBankAccount {
+interface IBankAccountFuncionalities {
     double verSaldo();
     void depositar(double valor);
     void sacar(double valor);
     String atualizarSaldo();
 }
 
-public class BankAccount implements IBankAccount {
-    double saldo;
+class BankAccountFuncionalities implements IBankAccountFuncionalities {
+    private double saldo = 0;
 
     @Override
     public double verSaldo() {
@@ -23,7 +23,7 @@ public class BankAccount implements IBankAccount {
         if (this.saldo <= 0 || this.saldo < valor) {
             System.out.println("Saldo insuficiente");
         } else {
-          this.saldo -= valor;
+            this.saldo -= valor;
         }
     }
 
@@ -31,6 +31,11 @@ public class BankAccount implements IBankAccount {
     public String atualizarSaldo() {
         return "Seu saldo atualizado é: R$" + this.saldo;
     }
+}
 
-    public static void main(String[] args) {}
+public class BankAccount {
+    public static void main(String[] args) {
+        BankAccountFuncionalities bankAccount = new BankAccountFuncionalities();
+        System.out.println(bankAccount.atualizarSaldo());
+    }
 }
