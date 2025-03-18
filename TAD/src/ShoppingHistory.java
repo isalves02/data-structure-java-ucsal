@@ -7,7 +7,7 @@ interface IRegistroCompra {
 class RegistroCompra implements IRegistroCompra {
     private String data;
     private int idRegistro;
-    private double valorTotal
+    private double valorTotal;
     private String[] itensComprados;
 
     @Override
