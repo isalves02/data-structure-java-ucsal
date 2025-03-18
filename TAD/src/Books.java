@@ -1,4 +1,4 @@
-interface IBooks {
+interface IBook {
     void addTitle(String title);
     void addPublisher(String author);
     void addPublishYear(int publishYear);
@@ -7,10 +7,10 @@ interface IBooks {
     int publishYear();
 }
 
-public class Books implements IBooks {
-    String title;
-    String publisher;
-    int publishYear;
+class Book implements IBook {
+    private String title;
+    private String publisher;
+    private int publishYear;
 
     @Override
     public String publisher() {
@@ -33,7 +33,7 @@ public class Books implements IBooks {
     }
 
     @Override
-    public void addPublisher(String publisher) {
+    public void addPubligsher(String publisher) {
         this.publisher = publisher;
     }
 
@@ -41,6 +41,10 @@ public class Books implements IBooks {
     public void addPublishYear(int publishYear) {
         this.publishYear = publishYear;
     }
+}
 
-    public static void main(String[] args) { }
+public class Books {
+    public static void main(String[] args) { 
+        Book book = new Book();
+    }
 }
