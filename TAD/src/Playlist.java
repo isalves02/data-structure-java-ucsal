@@ -25,5 +25,5 @@ class Musica implements IMusica {
 }
 
 public class Playlist {
-    Musica musica = new Musica();g
+    Musica musica = new Musica();
 }
