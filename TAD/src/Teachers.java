@@ -5,9 +5,9 @@ interface ITeacher {
     void addTeacherName(String name);
 }
 
-public class Teacher implements ITeacher {
-    String name;
-    int subjectCode;
+class Teacher implements ITeacher {
+    private String name;
+    private int subjectCode;
 
     @Override
     public String teacherName() {
@@ -28,6 +28,10 @@ public class Teacher implements ITeacher {
     public void addTeacherName(String name) {
         this.name = name;
     }
+}
 
-    public static void main(String[] args) {}
+public class Teachers {
+    public static void main(String[] args) {
+        Teacher teacher = new Teacher();
+    }
 }
