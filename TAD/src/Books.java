@@ -33,7 +33,7 @@ class Book implements IBook {
     }
 
     @Override
-    public void addPubligsher(String publisher) {
+    public void addPublisher(String publisher) {
         this.publisher = publisher;
     }
 
