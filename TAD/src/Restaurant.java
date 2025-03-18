@@ -1,8 +1,3 @@
-
-/*
-9 – Crie um TAD para representar um pedido de restaurante.
-O pedido deve conter nome do cliente, itens do pedido, quantidades e valor total.
- */
 interface IPedido {
     void novoPedido(String nomeCliente, String[] itensPedido, int[] quantidadesPedido);
     double valorTotalPedido(double valorItemPedido, int quantidadeItemPedido);
