@@ -1,12 +1,12 @@
-interface IStudents {
+interface IStudent {
     String studentName();
     int studentSemester();
     void addStudentInfo(String name, int semester);
 }
 
-public class Students implements IStudents {
-    String studentName;
-    int studentSemester;
+class Student implements IStudent {
+    private String studentName;
+    private int studentSemester;
 
     @Override
     public void addStudentInfo(String name, int semester) {
@@ -23,6 +23,10 @@ public class Students implements IStudents {
     public String studentName() {
         return studentName;
     }
+}
 
-    public static void main(String[] args) {}
+public class Students {
+    public static void main(String[] args) {
+        Student student = new Student();
+    }
 }
