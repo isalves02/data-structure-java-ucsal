@@ -1,8 +1,3 @@
-/*
-10 – Crie um TAD para representar uma playlist de músicas.
-Cada música deve conter título, artista e duração. A playlist deve permitir adicionar, remover e listar músicas.
-* */
-
 interface IMusica {
     void adicionar(String titulo, String artista, String duracao);
     void remover(String titulo, String artista, String duracao);
